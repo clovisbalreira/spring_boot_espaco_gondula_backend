@@ -1,9 +1,9 @@
 package com.clovis.backend.repository;
 
-import com.clovis.backend.model.Product;
+import com.clovis.backend.model.ContractProduct;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProductRepository extends CrudRepository<Product, Long> {
+public interface ContractProductRepository extends CrudRepository<ContractProduct, Long> {
 }

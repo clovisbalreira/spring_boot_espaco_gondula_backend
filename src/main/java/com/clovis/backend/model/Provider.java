@@ -12,18 +12,15 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Component
 @Entity
-@Table(name = "product")
+@Table(name = "provider")
 
-public class Product {
+public class Provider {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "code_product")
-    private long code_product;
+    @Column(name = "code_provider")
+    private long code_provider;
 
     @Column(name = "name")
     private String name;
-
-    @Column(name = "id_provider")
-    private int id_provider;
 }

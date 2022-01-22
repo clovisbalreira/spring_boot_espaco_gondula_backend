@@ -29,7 +29,7 @@ public class ProductController {
         if(this.productRepository.findById(id).isPresent()){
             return new ResponseEntity<Product>(this.productRepository.findById(id).get(),new HttpHeaders(),HttpStatus.OK);
         }
-        return new ResponseEntity<Product>(new HttpHeaders(),HttpStatus.NOT_FOUND);
+        return new ResponseEntity<Product>(new HttpHeaders(),HttpStatus.OK);
     }
 
     @PostMapping
